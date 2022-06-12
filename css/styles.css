@@ -18,7 +18,9 @@
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
-    font-family: 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
 }
 
 a {
@@ -50,7 +52,7 @@ color: var(--accent-color);}
     color: #000000;
 }
 .logo-footer span {
-    color: #ffffff;
+    color: var(--primary-white-color)
 }
 
 /* Navigation */
@@ -58,10 +60,10 @@ color: var(--accent-color);}
 .nav-list .nav-link {
     color: var(--title-text-color);
     font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
 }
 
 .nav-link:hover,
@@ -91,11 +93,48 @@ font-family: 'Roboto';
 }
 
 
-/* Sections */
+/* HERO */
 
 .hero {
-    background-color: var(--hero-footer-bg-color);
+    background: #2F303A;
 }
+
+.hero-title {
+    color: var(--primary-white-color);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Button */
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-style: normal;
+
+}
+
+.button:hover {
+    position: absolute;
+    visibility: hidden;
+    width: 200px;
+    height: 50px;
+}
+
 
 .section-title {
     font-family: 'Roboto';
@@ -104,36 +143,43 @@ font-family: 'Roboto';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
-    
     color: var(--title-text-color);
 }
 
-.section-subtitle {
+/* Benefits */
+
+
+.benefits-subtitle {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-
-color: var(--title-text-color)
+text-transform: uppercase;
+color: var(--title-text-color);
 }
 
-.section-subtitle.benefits {
-    text-transform: uppercase;
+.benefits-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 171%
 }
 
-/* Button */
+/* Наша команда */
 
-.button {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    width: 200px;
-    height: 50px;
+.team-subtitle {
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: var(--title-text-color);
+    font-style: normal;
 }
 
-
+.team-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 
